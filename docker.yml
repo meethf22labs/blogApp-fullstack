@@ -1,16 +1,18 @@
 version: '3.8'
 
-services: 
+services:
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
     container_name: blog_backend
-    ports: 
+    ports:
       - "3000:3000"
     working_dir: /app
+    environment:
+      - PORT=3000
     command: ["node", "index.js"]
-    
+
   frontend:
     build:
       context: ./frontend
