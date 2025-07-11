@@ -29,7 +29,7 @@ const HomePage = () => {
     }, [page, tag])
 
     return (
-        <div className="max-w-5xl mx-auto px-4 py-8 space-y-5">
+        <div className="min-h-screen flex flex-col justify-between max-w-5xl mx-auto px-4 py-8 space-y-5">
 
             <div className="flex justify-between items-center mb-6">
                 <h1 className="text-4xl font-bold text-blue-600">📝 Tech Blogs</h1>
